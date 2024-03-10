@@ -1,22 +1,34 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import HomePage from "./pages/Home/Home";
+import AboutPage from "./pages/About/About";
+import ContactPage from "./pages/Contact/Contact";
+import NotFoundErrorPage from "./pages/Common/NotFoundError";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const appRouter = createBrowserRouter([
+	{
+		path: "/",
+		element: <HomePage />,
+    errorElement: <NotFoundErrorPage />,
+	},
+	{
+		path: "/about",
+		element: <AboutPage />,
+    errorElement: <NotFoundErrorPage />, 
+	},
+	{
+		path: "/contact",
+		element: <ContactPage />,
+    errorElement: <NotFoundErrorPage />,
+	},
+]);
 
 function App() {
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>G Mtawali's Portfolio Website</h1>
-    </>
-  )
+	return (
+		<>
+			<RouterProvider router={appRouter} />
+		</>
+	);
 }
 
-export default App
+export default App;
