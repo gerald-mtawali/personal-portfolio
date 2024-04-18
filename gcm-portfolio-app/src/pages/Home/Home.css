@@ -1,0 +1,72 @@
+.introContainer {
+    display: grid;
+    /* border: 1px solid rgb(224, 160, 0); */
+    grid-template-columns: 25% 75%;
+    grid-auto-rows: 95%;
+    text-align: left;
+    width: 99vw;
+    align-content: center;
+}
+
+.introDetail {
+    padding: 2px; 
+    /* border: 1px solid #ff2211;*/
+    /* top right bottom left*/
+    /* top-bottom right-left*/
+    margin: 20% 2%;
+    text-overflow: wrap;
+    /* text-shadow: horizontal-offset vertical-offset blur-radius color*/
+    text-shadow: 6px 7px 0px rgba(255, 255, 255, 0.1);
+}
+
+.introDetail h1,
+h2 {
+    font-family: "Karla", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.85em;
+    color: var(--secondary-color);
+}
+
+.introDetail h3 {
+    font-family: "Karla", sans-serif;
+    font-weight: 600; 
+    font-style: normal;
+    font-size: 1.5em; 
+    color: var(--text); 
+}
+
+.introDetail p {
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25em; 
+    color: var(--text); 
+
+}
+
+.introProfileContainer {
+    /* border: 1px solid #45eaec; */
+    height: 100%; 
+    margin: 1px 2px 0px 0px;
+    /* position: relative;  */
+}
+
+.introProfileBackground {
+    width: 80%; 
+    height: 90%;
+    /* display: block;  */
+    margin-left: 10%; 
+    /* border: 1px solid #33aa11;  */
+}
+
+.introProfileForeground {
+    position: absolute; 
+    top:25%; 
+    left: 30%; 
+    height: 50%; 
+    display: block; 
+    /* border: 1px solid #9d11aa; */
+}
