@@ -1,0 +1,13 @@
+{
+    "lorem_data": [
+        {
+            "start_year": "2000", 
+            "end_year": "2010", 
+            "role": "Software Engineer", 
+            "company": "Company X", 
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
+            "stack": ["Python", "C++", "DevOps", "Docker", "ReactJS"] 
+        } 
+    ], 
+    "real_data": []
+}
