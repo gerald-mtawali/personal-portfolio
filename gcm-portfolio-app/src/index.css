@@ -4,6 +4,8 @@
   --accent: #752d93;
   --background: #131315; 
   --text: #fffffd;
+  --heading-font: "Karla", sans-serif;
+  --paragraph-font: "Inconsolata", monospace;
   /* --text: #22211f;    */
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -18,11 +20,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 
 body {
-  border: 4px solid var(--accent); 
+  /* border: 4px solid var(--accent);  */
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -54,13 +57,14 @@ body {
 }
 
 div.scroll {
-  margin: 4px 4px; 
+  /* margin: 4px 4px;  */
   padding: 4px; 
   background-color: transparent;
-  width: 99vw; 
+  width: 99vw;
+  min-height: 90vh; 
   overflow-x: hidden; 
   overflow-y: auto;
-
+  border: 1px solid yellow;
 }
 
 hr.solid {

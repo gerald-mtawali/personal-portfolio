@@ -1,0 +1,24 @@
+.descriptionContainer{
+    margin: 5px 10px; 
+    /* border: 1px solid pink;  */
+    animation: fadeIn 1s; 
+}
+
+.descriptionContainer h1 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color); 
+    font-weight: 800; 
+    font-size: 2.5em; 
+}
+
+.descriptionContainer p {
+    font-family: var(--paragraph-font);
+    color: var(--text);
+    font-weight: 400; 
+    
+}
+
+@keyframes fadeIn{
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
