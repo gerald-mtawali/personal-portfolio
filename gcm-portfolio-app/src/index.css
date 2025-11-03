@@ -73,6 +73,16 @@ hr.solid {
   border-bottom: 3px solid var(--secondary-color);
 }
 
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+}
+
+p {
+  font-family: var(--paragraph-font); 
+  color: var(--text); 
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

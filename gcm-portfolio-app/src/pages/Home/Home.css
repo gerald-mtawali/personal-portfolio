@@ -22,7 +22,7 @@
 
 .introDetail h1,
 h2 {
-    font-family: "Karla", sans-serif;
+    font-family: var(--heading-font);
     /* font-optical-sizing: auto; */
     font-weight: 800;
     font-style: normal;
@@ -31,7 +31,7 @@ h2 {
 }
 
 .introDetail h3 {
-    font-family: "Karla", sans-serif;
+    font-family: var(--heading-font);
     font-weight: 600; 
     font-style: normal;
     font-size: 1.5em; 
@@ -39,7 +39,7 @@ h2 {
 }
 
 .introDetail p {
-    font-family: "Inconsolata", monospace;
+    font-family: var(--paragraph-font);
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -101,7 +101,14 @@ h2 {
     padding: 0.5% 1%; 
     /* animation: fadeIn 5s;  */
 }
-/* @keyframes fadeIn{
-    0% { opacity: 0;}
-    100% { opacity: 1;}
-} */
+
+
+.timelineContainer {
+    width: 90vw; 
+    border: 1px solid #ff2121;
+    height: auto;
+    padding: 5px;  
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
